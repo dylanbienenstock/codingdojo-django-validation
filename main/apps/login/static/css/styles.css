@@ -1,0 +1,33 @@
+body {
+	padding-left: 20px;
+}
+
+.column {
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+}
+
+.column:last-child {
+	margin-left: 8px;
+}
+
+.column > h1 {
+	text-align: initial;
+}
+
+label {
+	display: block;
+	margin-bottom: 13px;
+}
+
+input[type=text], input[type=password] {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.errors {
+	text-align: center;
+	margin-top: 32px;
+	color: darkred;
+}

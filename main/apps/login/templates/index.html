@@ -8,29 +8,33 @@
 	</head>
 
 	<body>
-		<div class="column">
-			<h1>Registration</h1>
+		<h1>Welcome!</h1>
 
-			<div class="column">
-				<label for="first-name">First name:</label>
-				<label for="last-name">Last name:</label>
-				<label for="email-address">Email address:</label>
-				<label for="password">Password:</label>
-				<label for="confirm-password">Confirm password:</label>
-			</div>
+		<div class="column" style="margin-left: 35px">
+			<div class="form-box">
+				<h1>Registration</h1>
 
-			<div class="column">
-				<form action="/register" method="post">
-					{% csrf_token %}
-					
-					<input type="text" id="registration-first-name" name="first_name">
-					<input type="text" id="registration-last-name" name="last_name">
-					<input type="text" id="registration-email-address" name="email_address">
-					<input type="password" id="registration-password" name="password">
-					<input type="password" id="registration-confirm-password" name="confirm_password">
+				<div class="column">
+					<label for="first-name">First name:</label>
+					<label for="last-name">Last name:</label>
+					<label for="email-address">Email address:</label>
+					<label for="password">Password:</label>
+					<label for="confirm-password">Confirm password:</label>
+				</div>
 
-					<input type="submit" value="Register">
-				</form>
+				<div class="column">
+					<form action="/register" method="post">
+						{% csrf_token %}
+						
+						<input type="text" id="registration-first-name" name="first_name">
+						<input type="text" id="registration-last-name" name="last_name">
+						<input type="text" id="registration-email-address" name="email_address">
+						<input type="password" id="registration-password" name="password">
+						<input type="password" id="registration-confirm-password" name="confirm_password">
+
+						<input type="submit" value="Register">
+					</form>
+				</div>
 			</div>
 
 			<div class="errors">
@@ -42,23 +46,25 @@
 			</div>
 		</div>
 
-		<div class="column" style="margin-left: 100px">
-			<h1>Login</h1>
+		<div class="column" style="margin-left: 25px">
+			<div class="form-box">
+				<h1>Login</h1>
 
-			<div class="column">
-				<label for="email-address">Email address:</label>
-				<label for="password">Password:</label>
-			</div>
+				<div class="column">
+					<label for="email-address">Email address:</label>
+					<label for="password">Password:</label>
+				</div>
 
-			<div class="column">
-				<form action="/login" method="post">
-					{% csrf_token %}
+				<div class="column">
+					<form action="/login" method="post">
+						{% csrf_token %}
 
-					<input type="text" id="login-email-address" name="email_address">
-					<input type="password" id="login-password" name="password">
+						<input type="text" id="login-email-address" name="email_address">
+						<input type="password" id="login-password" name="password">
 
-					<input type="submit" value="Login">
-				</form>
+						<input type="submit" value="Login">
+					</form>
+				</div>
 			</div>
 
 			<div class="errors">
